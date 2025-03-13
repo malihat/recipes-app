@@ -27,7 +27,6 @@ function Navbar() {
         <ul className="flex gap-5">
             <li><NavLink to={'/'} className="text-black hover:text-gray-700 duration-300"> Home </NavLink> </li>
             <li><NavLink to={'/favorites'} className="text-black hover:text-gray-700 duration-300"> Favorites </NavLink> </li>
-            {/* <li><NavLink to={'/details'} className="text-black hover:text-gray-700 duration-300"> Details </NavLink> </li> */}
         </ul>
     </nav>
   )
