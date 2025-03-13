@@ -17,7 +17,7 @@ function Details() {
         `https://forkify-api.herokuapp.com/api/v2/recipes/${params.id}`
       );
       const data = await response.json();
-      console.log("this is data:", data.data);
+      // console.log("this is data:", data.data);
       if (data?.data) {
         setRecipeDetailData(data?.data);
       }
@@ -59,8 +59,8 @@ function Details() {
             Ingredients:
           </span>
           <ul className="flex flex-col gap-3">
-            {recipeDetailData?.recipe?.ingredients.map((ingredient) => (
-              <li key={ingredient.id} className="flex items-center gap-2">
+            {recipeDetailData?.recipe?.ingredients.map((ingredient, index) => (
+              <li key={index} className="flex items-center gap-2">
                 <span className="text-xl font-semibold text-black">
                   {" "}
                   {ingredient.quantity} {ingredient.unit}
@@ -79,7 +79,3 @@ function Details() {
 
 export default Details;
 
-{
-  /* <span className="text-xl font-semibold text-black gap-2"> {ingredient.quantity} {ingredient.unit}</span>
-<span className="text-xl font-semibold text-black gap-2">{ingredient.description}</span> */
-}

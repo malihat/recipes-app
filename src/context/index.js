@@ -41,17 +41,8 @@ export default function GlobalState({children}) {
             setFavoriteList([...favoriteList, getCurrentItem]);
         }
 
-        // setFavoriteList([...favoriteList, getCurrentItem])
-
-        // let newFavoriteList = [...favoriteList];
-        // const index = newFavoriteList.findIndex(item => item.id === getCurrentItem.id)
-
-        // index === -1 ? newFavoriteList.push(getCurrentItem) : newFavoriteList.splice(index)
-
-        // setFavoriteList(newFavoriteList);
     }
 
-    console.log(favoriteList,  "favoriteList");
 
 
 
